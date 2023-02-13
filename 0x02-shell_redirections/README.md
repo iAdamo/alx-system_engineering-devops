@@ -13,4 +13,7 @@ Display the content of the /etc/passwd file..
 Display the content of /etc/passwd and /etc/host
 
 4. Last lines of a file
-Display the last 10 lines of /etc/passwds
+Display the last 10 lines of /etc/passwd
+
+5. I'd prefer the first ones actually
+Display the first 10 lines of /etc/passwds
