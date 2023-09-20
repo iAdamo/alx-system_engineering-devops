@@ -1,11 +1,9 @@
-My readme for alx system engineering devops
+### System Engineering DevOps
 
-0x00. Shell, basics
+- [0x00. Shell, basics](https://github.com/iAdamo/alx-system_engineering-devops/tree/master/0x00-shell_basics)
+- [0x01. Shell, permissions](https://github.com/iAdamo/alx-system_engineering-devops/tree/master/0x01-shell_permissions)
+- [0x02. Shell, I/O Redirections and filters](https://github.com/iAdamo/alx-system_engineering-devops/tree/master/0x02-shell_redirections)
+- [0x03. Shell, init files, variables and expansions](https://github.com/iAdamo/alx-system_engineering-devops/tree/master/0x03-shell_variables_expansions)
+- [Command line for the win](https://github.com/iAdamo/alx-system_engineering-devops/tree/master/command_line_for_the_win)
 
-0x01. Shell, permissions
-
-0x02. Shell, I/O Redirections and filters
-
-0x03. Shell, init files, variables and expansions
-
-End of devops
+##### **`Author: Adam Sanusi Babatunde`**
