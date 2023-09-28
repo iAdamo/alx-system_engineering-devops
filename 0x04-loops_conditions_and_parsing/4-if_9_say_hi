@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays Best School 10 times
+# But for the 9th iteration, displays Best School and then Hi on a new line.
+# You must use the while loop (for and until are forbidden)
+# You must use the if statement.
+
+i=0
+while [[ "$i" -lt 10 ]]; do
+	if [[ "$i" -eq 9 ]]; then
+		echo "Hi"
+	fi
+	echo "Best School"
+	(( i++ ))
+done
