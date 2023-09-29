@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Bash script that groups visitors by IP and HTTP status code, and displays this data.
+#
+# Requirements:
+#
+# The exact format must be:
+# OCCURENCE_NUMBER IP HTTP_CODE
+# In list format
+# Ordered from the greatest to the lowest number of occurrences
+#
+# Use awk
+# You are not allowed to use while, for, until and cut
+
+awk '{print $1, $9}' apache-access.log | sort -n | uniq -c | sort -r
