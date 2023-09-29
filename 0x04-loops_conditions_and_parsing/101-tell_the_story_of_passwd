@@ -3,7 +3,6 @@
 # using the while loop + IFS
 
 while IFS=: read -r USER PASSWD U_ID G_ID USER_ID_IN HOME_DIR CMD_SH; do
-        echo "The user $USER is part of the $G_ID gang, lives in $HOME_DIR
-        and rides $CMD_SH. $U_ID's place is protected by the passcode $PASSWD,
-        more info about the user here: $USER_ID_IN"
+        echo -n "The user $USER is part of the $G_ID gang, lives in $HOME_DIR and rides $CMD_SH. "
+        echo "$U_ID's place is protected by the passcode $PASSWD, more info about the user here: $USER_ID_IN"
 done </etc/passwd
