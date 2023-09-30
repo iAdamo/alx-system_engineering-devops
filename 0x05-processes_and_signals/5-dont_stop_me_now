@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that stops infinity_and_beyond process.
+# shellcheck disable=SC2046
+# You must use kill
+
+kill $(pgrep "bash")
