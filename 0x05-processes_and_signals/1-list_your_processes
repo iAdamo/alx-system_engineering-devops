@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that displays a list of currently running processes
+#
+# Requirements:
+
+# Must show all processes, for all users, including those which might no have a TTY
+# Display in a user-oriented format
+# Show process hierarchy
+
+ps auxf
