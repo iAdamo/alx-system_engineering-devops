@@ -10,5 +10,5 @@
 - [0x07. Networking basics #0](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x07-networking_basics)
 - [0x08. Networking basics #1](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x08-networking_basics_2)
 - [Command line for the win](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/command_line_for_the_win)
-
+- [0x09. Web infrastructure design](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x09-web_infrastructure_design)
 ##### **`Author: Adam Sanusi Babatunde`**
