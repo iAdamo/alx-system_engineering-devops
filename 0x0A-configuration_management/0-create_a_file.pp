@@ -1,8 +1,8 @@
 # Creating pupepet file
 
-file { 'school':
-  path    => '/tmp/school',
+file {'school':
   ensure  => 'file',
+  path    => '/tmp/school',
   mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
