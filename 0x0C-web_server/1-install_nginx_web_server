@@ -4,26 +4,26 @@
 # When querying Nginx at its root / with a GET request (requesting a page) using curl,
 # it must return a page that contains the string Hello World!
 
-sudo apt -y update
-sudo apt install -y nginx
+nginx -v
+if [ "$?" != "0" ]; then
+	sudo apt -y update
+	sudo apt install -y nginx
+fi
 
-sudo mkdir /var/www/hello
-sudo chown -R "$USER":"$USER" /var/www/hello
-chmod 755 /var/www/hello
-echo "Hello World!" > /var/www/hello/hello.html
+sudo touch /var/www/html/index.html
+sudo chown -R "$USER":"$USER" /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
 
-sudo touch /etc/nginx/sites-available/hello
-sudo chown "$USER":"$USER" /etc/nginx/sites-available/hello
-cat > /etc/nginx/sites-available/hello << _EOL_
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_backup
+cat > /etc/nginx/sites-available/default << _EOL_
 server {
 listen 80 default_server;
 listen [::]:80 default_server;
-root /var/www/hello;
-index hello.html;
+root /var/www/html;
+index index.html;
 }
 _EOL_
 
-sudo ln -s /etc/nginx/sites-available/hello /etc/nginx/sites-enabled/
-sudo mv /etc/nginx/sites-enabled/default /home/ubuntu/
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
 sudo service nginx restart
