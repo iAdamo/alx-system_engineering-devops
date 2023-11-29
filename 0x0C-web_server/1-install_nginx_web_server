@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Install nginx on your web-01 server
+
+apt install -y nginx
+
+echo "Hello World!" > /var/www/html/index.html
+
