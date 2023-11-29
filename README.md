@@ -12,4 +12,7 @@
 - [Command line for the win](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/command_line_for_the_win)
 - [Web infrastructure design](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x09-web_infrastructure_design)
 - [Configuration management](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0A-configuration_management)
-#### **`Author: Adam Sanusi Babatunde`**
+- [SSH](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0B-ssh)
+- [Web server](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0C-web_server)
+
+##### **`Author: Adam Sanusi Babatunde`**
