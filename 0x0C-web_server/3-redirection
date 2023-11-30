@@ -3,7 +3,7 @@
 # Nginx should be listening on port 80
 # When querying Nginx at its root / with a GET request (requesting a page) using curl,
 # it must return a page that contains the string Hello World!
-
+# The redirection must be a “301 Moved Permanently”
 
 if ! nginx -v; then
 	sudo apt -y update
@@ -17,9 +17,23 @@ echo "Hello World!" > /var/www/html/index.html
 if  [ ! -e "default_backup" ]; then
 	sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_backup
 fi
-new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sudo sed -i "5i $new_string" /etc/nginx/sites-available/default
+cat > /etc/nginx/sites-available/default << _EOL_
+server {
+listen 80 default_server;
+listen [::]:80 default_server;
+root /var/www/html;
+index index.html;
+location / {
+        try_files \$uri \$uri/ =404;
+}
+}
+_EOL_
 
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "7i $new_string" /etc/nginx/sites-available/default
+
+if [ ! -e "/etc/nginx/sites-enabled/default" ]; then
+        sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+fi
 
 sudo service nginx restart

@@ -21,9 +21,13 @@ listen 80 default_server;
 listen [::]:80 default_server;
 root /var/www/html;
 index index.html;
+location / {
+	try_files \$uri \$uri/ =404;
+}
 }
 _EOL_
-
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+if [ ! -e "/etc/nginx/sites-enabled/default" ]; then
+	sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+fi
 
 sudo service nginx restart
