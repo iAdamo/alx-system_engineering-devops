@@ -14,5 +14,6 @@
 - [Configuration management](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0A-configuration_management)
 - [SSH](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0B-ssh)
 - [Web server](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0C-web_server)
+- [Web stack debugging #0](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0D-web_stack_debugging_0)
 
 ##### **`Author: Adam Sanusi Babatunde`**
