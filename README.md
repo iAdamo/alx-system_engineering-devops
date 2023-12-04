@@ -15,5 +15,6 @@
 - [SSH](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0B-ssh)
 - [Web server](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0C-web_server)
 - [Web stack debugging #0](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0D-web_stack_debugging_0)
+- [0x0F. Load balancer](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0F-load_balancer)
 
 ##### **`Author: Adam Sanusi Babatunde`**
