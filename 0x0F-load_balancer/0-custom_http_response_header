@@ -11,6 +11,7 @@ if ! nginx -v; then
         sudo apt install -y nginx
 fi
 
+sudo mkdir -p /var/www/html
 sudo touch /var/www/html/index.html /var/www/html/404.html
 sudo chown -R "$USER":"$USER" /var/www/html/index.html /var/www/html/404.html
 echo "Hello World!" > /var/www/html/index.html
@@ -22,7 +23,7 @@ listen 80 default_server;
 listen [::]:80 default_server;
 root /var/www/html;
 index index.html;
-add_header X-Served-By \$HOSTNAME
+add_header X-Served-By \$HOSTNAME;
 location / {
 	rewrite ^/redirect_me https://www.github.com/iAdamo permanent;
 	error_page 404 /404.html;
