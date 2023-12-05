@@ -12,8 +12,7 @@ if ! nginx -v; then
 fi
 
 sudo mkdir -p /var/www/html
-sudo touch /var/www/html/index.html /var/www/html/404.html
-sudo chown -R "$USER":"$USER" /var/www/html/index.html /var/www/html/404.html
+sudo chmod -R 755 /var/www
 echo "Hello World!" > /var/www/html/index.html
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 
@@ -23,6 +22,7 @@ listen 80 default_server;
 listen [::]:80 default_server;
 root /var/www/html;
 index index.html;
+server_name _;
 add_header X-Served-By \$HOSTNAME;
 location / {
 	rewrite ^/redirect_me https://www.github.com/iAdamo permanent;
@@ -31,9 +31,5 @@ location / {
 }
 }
 _EOL_
-
-if [ ! -e "/etc/nginx/sites-enabled/default" ]; then
-        sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
-fi
 
 sudo service nginx restart
