@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # A Bash script that will display information about subdomains.
+# shellcheck disable=SC2086
 
-dns_lookup () {
+dns_lookup() {
 	domain="$1"
 	subdomain="$2"
 	sub_domains=("www" "lb-01" "web-01" "web-02")
@@ -19,6 +20,5 @@ dns_lookup () {
                         echo "$result" | awk '{split($0, HOST, "."); print "The subdomain " HOST[1] " is a " $4 " record and points to "$5}'
 	fi
 }
-
 
 dns_lookup "$1" "$2"
