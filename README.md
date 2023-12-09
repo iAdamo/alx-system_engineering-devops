@@ -19,5 +19,10 @@
 - [Web stack debugging #0](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0D-web_stack_debugging_0)
 - [Web stack debugging #1](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0E-web_stack_debugging_1)
 - [Load balancer](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0F-load_balancer)
+- [HTTPS SSL](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x10-https_ssl)
 
-##### **`Author: Adam Sanusi Babatunde`**
+<a href=#>
+    <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="secure">
+</a>
+
+#### **`Author: Adam Sanusi Babatunde`**
