@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# A Bash script that will display information about subdomains.
+
+dns_lookup () {
+	domain="$1"
+	subdomain="$2"
+	sub_domains=("www" "lb-01" "web-01" "web-02")
+
+	if [ -z "$domain" ]; then
+		echo "Usage: $0 <domain> <optional: subdomain>"
+		return 1
+	elif [ -z "$subdomain" ]; then
+		for sub_d in "${sub_domains[@]}"; do
+			result=$(dig "$sub_d.$domain" | grep -A1 'ANSWER SECTION:' | tail -n1)
+			echo "$result" | awk '{split($0, HOST, "."); print "The subdomain " HOST[1] " is a " $4 " record and points to "$5}'
+		done
+	else
+		result=$(dig "$subdomain.$domain" | grep -A1 'ANSWER SECTION:' | tail -n1)
+                        echo "$result" | awk '{split($0, HOST, "."); print "The subdomain " HOST[1] " is a " $4 " record and points to "$5}'
+	fi
+}
+
+
+dns_lookup "$1" "$2"
