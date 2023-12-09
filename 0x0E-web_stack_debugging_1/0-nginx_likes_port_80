@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A bash script that fixes an Ubuntu container's Nginx installation to listen on port 80
+# Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
+# The script must  configures a server to the above requirements
+
+if ! nginx -v; then
+        sudo apt -y update
+        sudo apt install -y nginx
+fi
+sudo ln -sf /etc/nginx/sites-available/default  /etc/nginx/sites-enabled/default
+sudo service nginx start

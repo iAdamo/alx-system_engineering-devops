@@ -1,5 +1,5 @@
 #### **Web stack debugging #1**
-**`DevOps** **`SysAdmin`** **`Scripting`** **`Debugging`**
+**`DevOps`** **`SysAdmin`** **`Scripting`** **`Debugging`**
 
 ![debugging](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/271/B4eeypV.jpg)
 
@@ -48,4 +48,4 @@ Commercial support is available at
 root@966c5664b21f:/#
 ```
 
-[**Author:**](https://www.github.com/iAdamo) **`Adam Sanusi Babatunde`**
+**`Author:`** [**`Adam Sanusi Babatunde`**](https://www.github.com/iAdamo)
