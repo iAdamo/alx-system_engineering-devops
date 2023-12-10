@@ -31,12 +31,12 @@ defaults
 
 frontend http
 	bind *:80
-	reqadd X-Forwarded-Proto:\ http
+	http-request add-header X-Forwarded-Proto:\ http
 	default_backend web-backend
 
 frontend https
         bind *:443 ssl crt /etc/letsencrypt/live/www.enimo.tech/enimo.pem
-        reqadd X-Forwarded-Proto:\ https
+        http-request add-header X-Forwarded-Proto:\ https
         default_backend web-backend
 
 backend web-backend
