@@ -20,6 +20,7 @@
 - [Web stack debugging #1](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0E-web_stack_debugging_1)
 - [Load balancer](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x0F-load_balancer)
 - [HTTPS SSL](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x10-https_ssl)
+- [What happens when you type google.com in your browser and press Enter](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter)
 
 <a href=#>
     <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="secure">
