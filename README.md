@@ -22,7 +22,8 @@
 - [HTTPS SSL](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x10-https_ssl)
 - [What happens when you type google.com in your browser and press Enter](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter)
 - [Firewall](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x13-firewall)
-
+- [Web stack debugging #2](https://github.com/iAdamo/alx-system_engineerin
+g-devops/tree/main/0x12-web_stack_debugging_2)
 
 <a href=#>
     <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="secure">
