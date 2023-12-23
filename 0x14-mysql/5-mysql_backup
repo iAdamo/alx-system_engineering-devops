@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Generates a MySQL dump and creates a compressed archive out of it
+
+backup_file="backup.sql"
+tar_file="$(date '+%d-%m-%Y').tar.gz"
+
+if [ $# -ne 1 ]; then
+        echo "Usage: $0 <MYSQL database>"
+        exit 1
+elif [ -e "$backup_file" ]; then
+        echo "Backup file '$backup_file' found. Updating..."
+        mysqldump -u root -p"$1" --all-databases > backup.sql
+        tar -czvf "$(date '+%d-%m-%Y').tar.gz" backup.sql
+        echo "Backup updated successfully."
+else
+    echo "Backup file '$backup_file' not found. Creating a new backup..."
+    mysqldump -u root -p"$1" --all-databases > "$backup_file"
+    tar -czvf "$tar_file" "$backup_file"
+    echo "Backup created successfully."
+fi
