@@ -26,10 +26,10 @@
 - [Web stack debugging #2](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x12-web_stack_debugging_2)
 - [MySQL](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x14-mysql)
 - [API](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x15-api)
-
+- [API advanced](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x16-api_advanced)
 
 <a href=#>
-    <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="secure">
+    <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="alx_africa">
 </a>
 
 #### **`Author: Adam Sanusi Babatunde`**
