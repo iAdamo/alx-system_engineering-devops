@@ -2,7 +2,12 @@
 
 **`Shell_scripting`** | **`Regex`** | **`Networking`** | **`Web infrastructue design`**
 
-#### PROJECT
+##### Welcome to SystemDevOps, a powerful toolset designed to streamline and automate your system development workflow. SystemDevOps provides the tools and processes you need to enhance collaboration, automate repetitive tasks, and ensure the reliability and scalability of your systems.
+
+##### SystemDevOps is a comprehensive DevOps framework that integrates seamlessly into your development pipeline, focusing on efficiency, consistency, and collaboration. It brings together the best practices in system development, deployment, and operations, empowering your team to deliver high-quality software at scale.
+
+
+#### PROJECTS
 - [Shell, basics](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x00-shell_basics)
 - [Shell, permissions](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x01-shell_permissions)
 - [Shell, I/O Redirections and filters](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x02-shell_redirections)
@@ -30,9 +35,10 @@
 - [Web stack debugging #3](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x17-web_stack_debugging_3)
 - [Webstack monitoring](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x18-webstack_monitoring)
 - [Postmortem](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x19-postmortem)
+- [Application server](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x1A-application_server)
 
 <a href=#>
     <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="alx_africa">
 </a>
 
-#### **`Author: Adam Sanusi Babatunde`**
+#### **`Author`: [Adam Sanusi Babatunde](https://www.linkedin.com/in/adamsanusi)**
