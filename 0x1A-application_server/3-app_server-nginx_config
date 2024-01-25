@@ -1,0 +1,24 @@
+# Define a server block to handle HTTP requests on port 80
+server {
+    # Listen for incoming requests on port 80
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    # Specify the server name (domain or IP address)
+    server_name 35.175.134.9;
+
+    # Add a custom header to the response indicating the server that handled the request
+    add_header X-Served-By $HOSTNAME;
+
+    # Define a location block for requests to "/airbnb-onepage/"
+    location = /airbnb-onepage/ {
+        # Proxy the request to the Flask application running on http://127.0.0.1:5000/airbnb-onepage
+        proxy_pass http://127.0.0.1:5000/airbnb-onepage;
+    }
+
+    # Define a location block using a regular expression for requests matching the pattern "/airbnb-dynamic/number_odd_or_even/<digits>"
+    location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
+        # Proxy the request to the Flask application running on http://127.0.0.1:5001/number_or_or_even/<captured_digits>
+        proxy_pass http://127.0.0.1:5001/number_or_or_even/$1;
+    }
+}
