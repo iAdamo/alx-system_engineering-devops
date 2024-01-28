@@ -36,6 +36,8 @@
 - [Webstack monitoring](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x18-webstack_monitoring)
 - [Postmortem](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x19-postmortem)
 - [Application server](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x1A-application_server)
+- [Web stack debugging #4](https://github.com/iAdamo/alx-system_engineering-devops/tree/main/0x1B-web_stack_debugging_4)
+
 
 <a href=#>
     <img src="https://images.squarespace-cdn.com/content/v1/5f064fad5065bf4b98603cbe/1470eb72-6bc8-44da-944d-cd43a2c9d162/ALX+PNG.png" alt="alx_africa">
